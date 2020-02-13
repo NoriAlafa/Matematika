@@ -101,15 +101,15 @@ cin>>pilihan;
 
 switch(pilihan){
     case 1:
-    system("cls");
+    system("clear");
     luas_segitiga();
     break;
     case 2:
-    system("cls");
+    system("clear");
     volume_tabung();
     break;
     case 3:
-    system("cls");
+    system("clear");
     volume_balok();
     break;
     default:
@@ -126,7 +126,7 @@ cout<<"Anda Ingin Mengulangi Lagi (Y?N)";
             goto selesai;
         }
 selesai:
-    system("cls");
+    system("clear");
     cout<<"Terima Kasih telah menggunakan tools ini"<<endl;
 
 
