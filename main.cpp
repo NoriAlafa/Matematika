@@ -78,6 +78,66 @@ cout<<"   `+------+"<<endl;
     cout<<"Hasilnya Adalah = "<<panjang*lebar*tinggi<<endl;
 
 }
+int diameter(){
+ float jari;
+ cout<<"Masukkan jari"<<endl;
+ cin>>jari;
+ cout<<"hasil diameter adalah"<<2*jari<<endl;
+
+}
+int luas_lingkaran(){
+ const float phi=3.14;
+  float jari;
+ cout<<"                     *&@@#            "<<endl;
+ cout<<"               @                   @    "<<endl;
+ cout<<"           &                           @          "<<endl;
+ cout<<"                                         &       "<<endl;
+ cout<<"                                            %     "<<endl;
+ cout<<"     @                                       *    "<<endl;
+ cout<<"    @                                             "<<endl;
+ cout<<"   &                                           @  "<<endl;
+ cout<<"   .                                              "<<endl;
+ cout<<"                                                / "<<endl;
+ cout<<"                                                . "<<endl;
+ cout<<"  @                                             .  "<<endl;
+ cout<<"                                                  "<<endl;
+ cout<<"                                              ,   "<<endl;
+ cout<<"      @                                     *     "<<endl;
+ cout<<"        &                                         "<<endl;
+ cout<<"          &                             @         "<<endl;
+ cout<<"              @                     .&            "<<endl;
+ cout<<"                   %@*        @@ "<<endl;
+  cout<<"Masukkan jari jarinya"<<endl;
+  cin>>jari;
+  cout<<"Hasilnya adalah  "<<phi*jari*jari<<endl;
+
+}
+int keliling_lingkaran(){
+ const float phi=3.14;
+  float jari;
+ cout<<"                     *&@@#            "<<endl;
+ cout<<"               @                   @    "<<endl;
+ cout<<"           &                           @          "<<endl;
+ cout<<"                                         &       "<<endl;
+ cout<<"                                            %     "<<endl;
+ cout<<"     @                                       *    "<<endl;
+ cout<<"    @                                             "<<endl;
+ cout<<"   &                                           @  "<<endl;
+ cout<<"   .                                              "<<endl;
+ cout<<"                                                / "<<endl;
+ cout<<"                                                . "<<endl;
+ cout<<"  @                                             .  "<<endl;
+ cout<<"                                                  "<<endl;
+ cout<<"                                              ,   "<<endl;
+ cout<<"      @                                     *     "<<endl;
+ cout<<"        &                                         "<<endl;
+ cout<<"          &                             @         "<<endl;
+ cout<<"              @                     .&            "<<endl;
+ cout<<"                   %@*        @@ "<<endl;
+cout<<"Masukkan jari jarinya"<<endl;
+  cin>>jari;
+  cout<<"Hasilnya adalah  "<<2*phi*jari<<endl;
+ }
 
 int main(){
     int pilihan;
@@ -97,21 +157,41 @@ cout<<"==============================================================="<<endl;
 cout<<"1.Luas Segitiga "<<endl;
 cout<<"2.Volume Tabung"<<endl;
 cout<<"3.Volume Balok"<<endl;
+cout<<"4.Diameter Lingkaran"<<endl;
+cout<<"5.Luas Lingkaran"<<endl;
+cout<<"6.Keliling Lingkaran"<<endl;
 cin>>pilihan;
 
 switch(pilihan){
     case 1:
-    system("clear");
+    system("cls");
     luas_segitiga();
     break;
+
     case 2:
-    system("clear");
+    system("cls");
     volume_tabung();
     break;
+
     case 3:
-    system("clear");
+    system("cls");
     volume_balok();
     break;
+
+    case 4:
+    diameter();
+    break;
+
+    case 5:
+    system("cls");
+    luas_lingkaran();
+    break;
+
+    case 6:
+    system("cls");
+    keliling_lingkaran();
+    break;
+
     default:
     cout<<"Maaf pilihan anda tidak ada"<<endl;
     break;
@@ -120,13 +200,14 @@ switch(pilihan){
 cout<<"Anda Ingin Mengulangi Lagi (Y?N)";
     cin>>lagi;
         if(lagi=="y" || lagi=="Y"){
+            system("cls");
             goto awal;
         }
         if (lagi=="N" || lagi=="n"){
             goto selesai;
         }
 selesai:
-    system("clear");
+    system("cls");
     cout<<"Terima Kasih telah menggunakan tools ini"<<endl;
 
 
